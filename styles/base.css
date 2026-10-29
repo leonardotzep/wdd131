@@ -3,13 +3,19 @@
     padding: 0px;
 }
  .title {
-    background-color:#154c79;
+    display: flex;
+    justify-content: space-around;
+    background-color:#154c79;;
     color: #fff;
+    margin: 0;
+    padding: 10px;
  }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* NAVIGATION SECTION */
 
 nav ul {
     display: flex;
@@ -27,9 +33,40 @@ nav a {
     transition: color 0.3s ease;
 }
 
-h1 {
+/* MAIN SECTION */
+
+main h1 {
     text-align: center;
     color: black;
     padding: 30px;
     font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* MAIN SECTION */
+
+main img {
+    width: 150px;
+}
+
+main section{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: rgb(188, 188, 188);
+}
+
+.main section {
+    min-height: 250px;
+    padding: 15px;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    background-color: rgb(47, 48, 49);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    min-height: 100px;
 }
