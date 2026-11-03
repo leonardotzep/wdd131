@@ -18,6 +18,11 @@ body {
 }
 
 /* HEADER SECTION */
+header {
+    margin: 1px;
+    padding: 1px;
+}
+
  .title {
     display: block;
     background-color: var(--primary-color);
