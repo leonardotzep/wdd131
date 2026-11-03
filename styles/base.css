@@ -13,7 +13,8 @@
 }
 
 body {
-    font-family: var(--body-font);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
 }
 
 /* HEADER SECTION */
