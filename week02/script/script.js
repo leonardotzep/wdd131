@@ -1,5 +1,10 @@
 const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
-const list = document.querySelector('_____'); // Fill in the blank to reference the unordered list element.
+const list = document.querySelector('#list');
 const li = document.createElement('li');
+const deleteButon = document.createElement('button');
+li.textContent = input.value;
+deleteButton.textContent = '❌';
+li.append(deleteButon);
+list.append(li)
 
