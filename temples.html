@@ -9,6 +9,8 @@
     
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <script src="scripts/temples.js" defer></script>
 </head>
@@ -16,28 +18,63 @@
 <body>
     <header>
         <h1>Temple Album</h1>
+        <button id="menu">☰</button>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Old</li>
-                <li>New</li>
-                <li>Large</li>
-                <li>Small</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1></h1>
-        <figure></figure>
-        <figure></figure>
-        <figure></figure>
-        <figure></figure>
-        <figure></figure>
-        <figure></figure>
-        <figure></figure>
-        <figure></figure>
-        <figure></figure>
+        <h1>Home</h1>
+        <div class="pictures">
+        <figure>
+            <img src="images/temple-xela.jpg" alt="Quetzaltenango">
+            <figcaption>Quetzaltenango Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/temple-coban.webp" alt="Cobán">
+            <figcaption>Cobán Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/temple-miraflores.jpeg" alt="Miraflores">
+            <figcaption>Miraflores Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/temple-guatemala-city.jpg" alt="Guatemala city">
+            <figcaption>Guatemala city Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/temple-huehuetenango.webp" alt="Huehetenango">
+            <figcaption>Huehuetenango Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/temple-panama.jpg" alt="Panamá">
+            <figcaption>Panamá Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/temple-salt-lake-city.jpg" alt="Salt Lake City">
+            <figcaption>Salt Lake City Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/temple-tegucigalpa.webp" alt="Tegucigalpa">
+            <figcaption>Tegucigalpa Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/temple-san-pedro-sula.webp" alt="San Pedro Sula">
+            <figcaption>San Pedro Sula Temple</figcaption>
+        </figure>
+        </div>
     </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Diego Tzep | Guatemala</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
