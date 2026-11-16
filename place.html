@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals/Responsive Images, Functions - Diego Tzep</title>
+    <meta name="description" content="WDD131 - Responsive images and functions, course home page to practice">
+    <meta name="author" content="Diego Tzep">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Brazil</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source>
+                <img src="images/cristo-el-redentor.webp" alt="cristo-el-redentor" width="400" height="700">
+            </picture>
+        </section>
+  
+        <section class="country-data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area: </strong>8.515.767 sq km</li>
+                <li><strong>Population: </strong>214.211.951</li>
+                <li><strong>Capital: </strong>Brasilia</li>
+                <li><strong>Languages: </strong>Portuguese</li>
+                <li><strong>Currency: </strong>Real</li>
+                <li><strong>Time Zone: </strong>UTC-5</li>
+                <li><strong>Calling Code: </strong>+55</li>
+                <li><strong>Internet TLD: </strong>.br</li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="cloud">
+            <ul>
+                <li><strong>Temperature: </strong>25 °C</li>
+                <li><strong>Conditions: </strong>Light rain</li>
+                <li><strong>Wind: </strong>5 km/h</li>
+                <li><strong>Heat index: </strong>26 °C</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Diego Tzep | Guatemala</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
