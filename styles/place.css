@@ -82,8 +82,9 @@ footer {
         position: absolute;
         left: 1rem;
         top: 8rem;
-        background-color: var(--light-color);
+        background-color: rgba(225, 225, 225, 0.8);
         padding: 10px;
+        box-shadow: 0 1px 15px;
     }
 
     .country-data li {
@@ -95,8 +96,9 @@ footer {
         position: absolute;
         right: 1rem;
         bottom: 4rem;
-        background-color: var(--light-color);
+        background-color: rgba(225, 225, 225, 0.8);
         padding: 10px;
+        box-shadow: 0 1px 15px;
     }
 
     .weather li {

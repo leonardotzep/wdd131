@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals/Responsive Images, Functions - Diego Tzep</title>
-    <meta name="description" content="WDD131 - Responsive images and functions, course home page to practice">
+    <title>WDD 131 - Dynamic Web Fundamentals/Brazil Country Page - Diego Tzep</title>
+    <meta name="description" content="WDD131 - Information about Brazil including geography, population, weather, and national data.">
     <meta name="author" content="Diego Tzep">
 
     <link rel="stylesheet" href="styles/place.css">
@@ -20,7 +20,7 @@
         <section class="hero">
             <picture>
                 <source srcset="images/cristo.webp" media="(min-width: 700px)">
-                <img src="images/cristo-el-redentor.webp" alt="status of cristo el redentor of Rio de Janeiro" width="400" height="700">
+                <img src="images/cristo-el-redentor.webp" alt="Christ the Redeemer statue in Rio de Janeiro, Brazil" width="400" height="700">
             </picture>
         </section>
   
@@ -40,11 +40,11 @@
 
         <section class="weather">
             <h2>Weather</h2>
-            <img src="images/weather.svg" alt="cloud">
+            <img src="images/weather.svg" alt="cloudy weather icon">
             <ul>
                 <li><strong>Temperature: </strong>25 °C</li>
                 <li><strong>Conditions: </strong>Light rain</li>
-                <li><strong>Wind: </strong>5 km/h</li>
+                <li><strong>Wind chill: </strong> <span id="windChill"></span></li>
                 <li><strong>Heat index: </strong>26 °C</li>
             </ul>
         </section>
