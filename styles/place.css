@@ -105,7 +105,6 @@ footer {
 
     main {
         display: grid;
-        grid-template-columns: ;
     }
     
     .weather h2::after {
