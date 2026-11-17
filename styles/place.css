@@ -1,3 +1,9 @@
+:root {
+    --primary-color: rgb(3, 144, 17);
+    --secondary-color: gold;
+    --light-color: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,14 +16,20 @@ body {
 
 /* HEADER SECTION */
 header {
-    background-color: rgb(2, 132, 15);
-    border-bottom: 20px solid gold;
+    background-color: var(--primary-color);
+    border-bottom: 20px solid var(--secondary-color);
 }
 
 header h1 {
-    color: #fff;
+    color: var(--light-color);
     text-align: center;
     padding: 20px;
+}
+
+/* IMAGE SECTION */
+.hero img {
+    width: 100%;
+    height: auto;
 }
 
 /* MAIN SECTION */
@@ -53,15 +65,49 @@ main {
 /* FOOTER SECTION */
 
 footer {
-    background-color: rgb(2, 132, 15);
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--light-color);
     text-align: center;
-    padding: 15px;
+    padding: 20px;
 }
 
 
 
-@media (min-width: 1000px) {
+@media screen and (min-width: 700px) {
+    .hero {
+        position: relative;
+    }
+
+    .country-data {
+        position: absolute;
+        left: 1rem;
+        top: 8rem;
+        background-color: var(--light-color);
+        padding: 10px;
+    }
+
+    .country-data li {
+        margin: 0.6rem 0;
+
+    }
+
+    .weather {
+        position: absolute;
+        right: 1rem;
+        bottom: 4rem;
+        background-color: var(--light-color);
+        padding: 10px;
+    }
+
+    .weather li {
+        margin: 0.6rem 0;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: ;
+    }
+    
     .weather h2::after {
         content: " ⛅";
     }
