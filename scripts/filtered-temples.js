@@ -91,6 +91,7 @@ const temples = [
     }
 ];
 
+createTempleCard();
 
 function createTempleCard() {
     temples.forEach(temple => {
@@ -119,6 +120,5 @@ function createTempleCard() {
     });
 }
 
-createTempleCard();
 
 
