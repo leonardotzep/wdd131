@@ -43,7 +43,7 @@ const temples = [
     {
         templeName: "Yigo Guam",
         location: "Yigo, Guam",
-        dedicated: "2020, May 2022",
+        dedicated: "2020, May, 2",
         area: 6861,
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
     },
@@ -91,10 +91,42 @@ const temples = [
     }
 ];
 
-createTempleCard();
+createTempleCard(temples);
 
-function createTempleCard() {
-    temples.forEach(temple => {
+const homeLink = document.querySelector("#home");
+homeLink.addEventListener("click", () => {
+    createTempleCard(temples);
+});
+
+const oldLink = document.querySelector("#old");
+oldLink.addEventListener("click", () => {
+    const oldTemples = temples.filter(temple => parseInt(temple.dedicated) < 1900);
+    createTempleCard(oldTemples);
+});
+
+const newLink = document.querySelector("#new");
+newLink.addEventListener("click", () => {
+    const newTemples = temples.filter(temple => parseInt(temple.dedicated) > 2000);
+    createTempleCard(newTemples);
+});
+
+const largeLink = document.querySelector("#large");
+largeLink.addEventListener("click", () => {
+    const largeTemples = temples.filter();
+    createTempleCard(largeTemples);
+});
+
+const smallLink = document.querySelector("#small");
+smallLink.addEventListener("click", () => {
+    const smallTemples = temples.filter();
+    createTempleCard(smallTemples);
+});
+
+
+function createTempleCard(filteredTemples) {
+    document.querySelector(".pictures").innerHTML ="";
+
+    filteredTemples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");
