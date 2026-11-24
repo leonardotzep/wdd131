@@ -93,32 +93,39 @@ const temples = [
 
 createTempleCard(temples);
 
+const pageTitle = document.querySelector("#page-title");
+
 const homeLink = document.querySelector("#home");
 homeLink.addEventListener("click", () => {
+    pageTitle.textContent = "Home";
     createTempleCard(temples);
 });
 
 const oldLink = document.querySelector("#old");
 oldLink.addEventListener("click", () => {
+    pageTitle.textContent = "Old";
     const oldTemples = temples.filter(temple => parseInt(temple.dedicated) < 1900);
     createTempleCard(oldTemples);
 });
 
 const newLink = document.querySelector("#new");
 newLink.addEventListener("click", () => {
+    pageTitle.textContent = "New";
     const newTemples = temples.filter(temple => parseInt(temple.dedicated) > 2000);
     createTempleCard(newTemples);
 });
 
 const largeLink = document.querySelector("#large");
 largeLink.addEventListener("click", () => {
-    const largeTemples = temples.filter();
+    pageTitle.textContent = "Large";
+    const largeTemples = temples.filter(temple => parseInt(temple.area) > 90000);
     createTempleCard(largeTemples);
 });
 
 const smallLink = document.querySelector("#small");
 smallLink.addEventListener("click", () => {
-    const smallTemples = temples.filter();
+    pageTitle.textContent = "Small";
+    const smallTemples = temples.filter(temple => parseInt(temple.area) < 10000);
     createTempleCard(smallTemples);
 });
 
@@ -151,6 +158,8 @@ function createTempleCard(filteredTemples) {
         document.querySelector(".pictures").appendChild(card);
     });
 }
+
+
 
 
 

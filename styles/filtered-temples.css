@@ -75,17 +75,21 @@ main h1 {
     gap: 16px;
 }
 
-figure img {
+.pictures img {
     width: 100%;
     max-width: 300px;
     height: 175px;
     object-fit: cover;
 }
 
-figure {
+.pictures section {
     margin: 1rem auto;
     color: rgb(55, 1, 106);
     font-weight:  bold;
+    border: 1px solid #d3d3d3;
+    background-color: #f5f3f5;
+    padding: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 /* FOOTER SECTION */
