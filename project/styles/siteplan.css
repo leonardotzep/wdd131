@@ -123,3 +123,12 @@ section {
     padding: 0.25rem 0.5rem;
     margin: 0;
 }
+
+/* IMAGE SECTION */ 
+.wireframe img {
+    display: block;
+    margin: 1rem auto;
+    width: 35%;
+    height: auto;
+    padding: 10px;
+}
